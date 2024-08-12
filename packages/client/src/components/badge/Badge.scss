@@ -1,0 +1,9 @@
+@import "styles/mixins";
+
+.badge {
+  --background-color: var(--badge-color, #{$color-accent-dark}); // Default background color
+
+  @include rect;
+  margin: 0.2rem;
+  color: color-mix(in srgb, var(--background-color) 50%, white 50%);
+}

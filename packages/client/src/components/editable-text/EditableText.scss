@@ -1,0 +1,27 @@
+.editable-text {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+
+  input,
+  textarea {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure full width */
+  }
+
+  span {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%; /* Ensure full width */
+  }
+
+  // span:hover {
+  //   border-color: #ccc;
+  // }
+}

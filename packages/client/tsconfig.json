@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["./src/components/*"]
+    }
+  },
+  "include": ["*.d.ts", "src", "tests"]
+}

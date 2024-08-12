@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env
+
+# Bun files
+.nx/
+bun.lockb
+
+# Editor files
+.vscode/
+
+# Built files
+dist/

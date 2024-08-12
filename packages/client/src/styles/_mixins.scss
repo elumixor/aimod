@@ -1,0 +1,40 @@
+@import "styles/variables";
+
+@mixin set-action-color {
+  color: $color-accent;
+}
+
+@mixin actionable {
+  @include set-action-color;
+  filter: saturate(0.3);
+
+  user-select: none;
+  cursor: pointer;
+  transition:
+    filter 0.1s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    filter: saturate(1) brightness(1.5);
+    transform: translate(-2px, -2px);
+  }
+}
+
+@mixin rect {
+  @include set-action-color;
+  filter: saturate(0.3);
+
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-color, $color-accent-dark);
+}
+
+@mixin actionable-bordered {
+  @include actionable;
+  @include rect;
+
+  &.selected {
+    background-color: $color-accent-light;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "aimod",
+  "private": "true",
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "dev": "bun run --filter '*' dev",
+    "lint": "bun run eslint --ext .ts .",
+    "prepare": "husky"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@elumixor/eslint": "^0.1.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "husky": "^9.1.4",
+    "identify": "^0.1.5"
+  }
+}

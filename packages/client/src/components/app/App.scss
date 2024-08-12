@@ -1,0 +1,33 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+#root {
+  max-width: 1280px;
+  margin-left: 5rem;
+  padding: 2rem;
+}
+
+#add-repo-button {
+  font-size: 1.5rem;
+  height: fit-content;
+  align-self: center;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+
+  @include actionable;
+}
+
+.tab {
+  @include actionable-bordered;
+
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+
+  &:hover {
+    max-width: fit-content;
+  }
+}
